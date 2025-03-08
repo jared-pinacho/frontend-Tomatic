@@ -1,0 +1,43 @@
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos de la barra superior */
+.contenedor-barra {
+    width: 100%;
+    height: 70px;
+    background-color: #00a384;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto elevado */
+   
+}
+
+/* Botón de inicio de sesión */
+.ingresar {
+  
+    color: white;
+    border: none;
+    background-color: transparent;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    
+}
+
+.ingresar:hover {
+   
+    transform: scale(1.05); /* Efecto de agrandado al pasar el mouse */
+}
+
+.logo {
+    height: 50px; /* Ajusta el tamaño según el logo */
+}
