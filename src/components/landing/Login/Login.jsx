@@ -20,7 +20,6 @@ function Login() {
   const { login } = useAuthContext();
   const navigate = useNavigate(); // Usar el hook useNavigate
 
-
   const handleSubmitLogin = (event) => {
     event.preventDefault();
     axios
@@ -32,10 +31,18 @@ function Login() {
           .post(`${apiUrl}login`, formData)
           .then((response) => { 
             const data = response.data.data;
-           console.log(data);
+           //console.log(data);
             toast.success('Inicio de sesion');
             login(data);
-            navigate('/homePage'); // Redirigir a la ruta protegida
+           
+            if (data.rol === 1) {
+                navigate("/homePage");
+              } else if (data.rol === 2) {
+                navigate("/homeVendedor");
+              }else {
+
+                navigate("/");
+              }
 
           })
           .catch((error) => {

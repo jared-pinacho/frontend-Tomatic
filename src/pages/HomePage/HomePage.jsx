@@ -6,7 +6,8 @@ import '../HomePage/HomePage.css'
 function HomePage() {
   return (
     <div>
-      <button  >gg</button>
+     
+
     </div>
   )
 }
