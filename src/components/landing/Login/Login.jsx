@@ -36,7 +36,7 @@ function Login() {
             login(data);
            
             if (data.rol === 1) {
-                navigate("/homePage");
+                navigate("/home");
               } else if (data.rol === 2) {
                 navigate("/homeVendedor");
               }else {

@@ -8,7 +8,8 @@
   /* Estilo base para el sidebar */
   .sidebar {
     width: 200px;
-    background-color: #008de1;
+    background: rgba(189, 52, 254, .5);
+    background: radial-gradient(1686.42% 113.39% at 83.25% 2.56%, #be34fe3f, #be34fe3b);
     padding: 20px;
     height: 100vh;
     overflow: none;
@@ -24,10 +25,13 @@
   
   .linea {
     border-width: 0px;
-    border-color: #008de1;
+    border-color: rgba(189, 52, 254, .5);
   }
   .vis{
-    font-size: 18px;
+    font-size: 16px;
+    border: 1px solid rgba(189, 52, 254, .5);
+    background: radial-gradient(1686.42% 113.39% at 83.25% 2.56%, #bd34fe1a, #be34fe52);
+    
   }
   
   button {
@@ -45,7 +49,7 @@
     padding: 0;
     overflow: hidden;
     background-color: #9dc5c2;
-    color: #135585;
+    color: #dfdfd6;
     margin-top: auto;
     border-radius: 15px;
     width: 100%;
@@ -54,16 +58,16 @@
   }
   
   .btnMostrar.oculto {
-    background-color: #9dc5c2;
     border-radius: 20px;
     bottom: 8px;
-    color: #135585;
     left: 10px;
     padding: 5px 15px;
     position: fixed;
     cursor: pointer;
     transition: all 0.3s;
-  
+    border: 1px solid rgba(189, 52, 254, .5);
+    background: radial-gradient(1686.42% 113.39% at 83.25% 2.56%, #bd34fe1a, #be34fe52);
+    
   }
   
   .btnMostrar.visible {
@@ -71,6 +75,8 @@
     padding: 0;
     overflow: hidden;
   font-size: 17px;
+  
+  
   }
   
   
@@ -89,22 +95,12 @@
   }
   
   .encabezado {
-    display: flex;
-    align-items: center;
-    
-    
-    margin-bottom: 15px;
-    background-color: white;
+    margin-bottom: 04px;
+    background-color: none;
     /*D34646 este color lo usaremos cuando la opcion este seleccionada*/
   }
   
-  .img_Encabezado {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    
-    background-color: #008de1;
-  }
+  
   
   .usuario {
     display: flex;
@@ -112,32 +108,29 @@
     padding: 5px;
     border-radius: 15px;
     margin-bottom: 15px;
-    background-color: #9dc5c2;
+    border: 1px solid rgba(189, 52, 254, .5);
+    background: radial-gradient(1686.42% 113.39% at 83.25% 2.56%, #bd34fe1a, #be34fe52);
+    
     flex-direction: column;
   }
   
   .texto_Usuario {
     margin-left: 15px;
     font-size: 17px;
-    color: #135585;
+    color: rgb(72, 255, 0);
     font-weight: bold;
   
   }
   
   .texto_Rol {
     margin-left: 15px;
-    font-size: 18px;
-    color: red;
+    font-size: 15px;
+    color: #dfdfd6;
     font-weight: bold;
     text-align: center;
   }
   
-  .usuario hr {
-    margin: 0px;
-    border-width: 2px;
-    opacity: .5;
-    color: #135585;
-  }
+  
   
   .item {
     display: flex;
@@ -145,7 +138,9 @@
     padding: 5px;
     border-radius: 15px;
     margin-bottom: 15px;
-    background-color: #9dc5c2;
+    border-radius: 100px;
+    border: 1px solid rgba(189, 52, 254, .5);
+    background: radial-gradient(1686.42% 113.39% at 83.25% 2.56%, #bd34fe1a, #be34fe52);
     /*D34646 este color lo usaremos cuando la opcion este seleccionada*/
     transform: translateY(0);
     transition:transform .5s;
@@ -155,12 +150,13 @@
     transform: translateY(-5px);
   }
   .active .item {
-    background-color: #81c456;
+    background: radial-gradient(11.42% 110.42% at 100% 100%, #ffffff80, #fff0), radial-gradient(120.35% 90.35% at 100% 20.74%,#41d1ff, #41d1ff00 ), radial-gradient(80.94% 9.94% at 108.42% 15.79%,#bd34fe, #bd34fe00 );
+    box-shadow: 0 1.5px #fffc inset;
   
   }
   
   .active .item .texto-opcion{
-    color: #135585;
+    color: #fff;
   }
   
   .item .texto-opcion{
@@ -207,13 +203,7 @@
   
   .texto-opcion {
     font-size: 18px;
-    color: #135585;
-    font-weight: bold;
-  }
-  
-  .texto-subopcion {
-    font-size: 15.5px;
-    color: #135585;
+    color: #dfdfd6;
     font-weight: bold;
   }
   

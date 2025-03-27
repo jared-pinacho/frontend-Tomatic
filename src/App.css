@@ -1,11 +1,18 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+.app {
+  display: flex;
+  background-color: #06141b;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Myriad Pro Regular', sans-serif;
+  /* font-family: "MyriadPro"; */
+  justify-content: center;
+  align-content: center;
 }
 
-#root, .app {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
+
+
+.color1 {color: #060607;}
+.color2 {color: #06141b;}
+.color3 {color: #092132;}
+.color4 {color: #0f3348;}
+.color5 {color: #154762;}

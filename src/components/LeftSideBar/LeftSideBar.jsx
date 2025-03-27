@@ -83,11 +83,7 @@ import {
    <div className="sidebar-container">
             <div className={`sidebar ${sidebarVisible ? "visible" : "oculto"}`}>
               <div className="encabezado">
-                <img
-                  className="img_Encabezado"
-                  src={logo2}
-                  alt="Descripción de la imagen"
-                />
+               
               </div>
               <hr className="linea" />
               <div className="usuario">
@@ -127,19 +123,19 @@ import {
                           <FontAwesomeIcon
                             className="icono"
                             icon={faShop}
-                            color="#135585"
+                            color="#dfdfd6"
                           />
                           <span className="texto-opcion">Ventas</span>
                         </div>
                       </NavLink>
                     </li>
                     <li onClick={handle2}>
-                      <NavLink to="/cucs" activeclassname="active">
+                      <NavLink to="/adminProductos" activeclassname="active">
                         <div className="item">
                           <FontAwesomeIcon
                             className="icono"
                             icon={faLemon}
-                            color="#135585"
+                            color="#dfdfd6"
                           />
                           <span className="texto-opcion">Productos</span>
                         </div>
@@ -151,7 +147,7 @@ import {
                           <FontAwesomeIcon
                             className="icono"
                             icon={faUsers}
-                            color="#135585"
+                            color="#dfdfd6"
                           />
                           <span className="texto-opcion">Empleados</span>
                         </div>
@@ -163,7 +159,7 @@ import {
                           <FontAwesomeIcon
                             className="icono"
                             icon={faClock}
-                            color="#135585"
+                            color="#dfdfd6"
                           />
                           <span className="texto-opcion">Clientes</span>
                         </div>
@@ -175,7 +171,7 @@ import {
                           <FontAwesomeIcon
                             className="icono"
                             icon={faBook}
-                            color="#135585"
+                            color="#dfdfd6"
                           />
                           <span className="texto-opcion">Invernaderos</span>
                         </div>
@@ -187,7 +183,7 @@ import {
                           <FontAwesomeIcon
                             className="icono"
                             icon={faGlobe}
-                            color="#135585"
+                            color="#dfdfd6"
                           />
                           <span className="texto-opcion">Cosechas</span>
                         </div>
@@ -199,7 +195,7 @@ import {
                           <FontAwesomeIcon
                             className="icono"
                             icon={faFile}
-                            color="#135585"
+                            color="#dfdfd6"
                           />
                           <span className="texto-opcion">
                             Categorias
@@ -310,7 +306,7 @@ import {
                     <FontAwesomeIcon
                       className="icono"
                       icon={faEyeSlash}
-                      color="#135585"
+                      color="#dfdfd6"
                     />
                     Ocultar Menú
                   </button>
@@ -325,7 +321,7 @@ import {
             <FontAwesomeIcon
               className="icono"
               icon={faEye}
-              color="#135585"
+              color="#dfdfd6"
               beat
             />
             Ver Menú

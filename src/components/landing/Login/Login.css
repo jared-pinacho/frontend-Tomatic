@@ -1,35 +1,43 @@
 /* Estilos globales para ocupar toda la pantalla */
-body, html {
-    height: 100%;
-    margin: 0;
-}
+
 
 h3{
-    color: white;
+    
+    color: #DFDFD6;
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
 }
 
+label {
+    color: #dfdfd6;
+    font-size: 15px;
+}
+
+input{
+    background-color:#06141b;
+    color: #dfdfd6;
+}
+
 /* Contenedor que centra el login */
 .container {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     
-    height: 100vh; /* Ocupa toda la pantalla */
 }
 
 /* Estilos del formulario */
 .login {
-    width: 400px; /* Ajusta según necesidad */
+    width: 400px;
     height: 400px;
     padding: 20px;
-  
-    background-color: #00a384;
+    background: rgba(189, 52, 254, .5);
+    background: radial-gradient(1686.42% 113.39% at 83.25% 2.56%, #be34fe80, #be34fe2a);
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    
+    margin: auto; /* Centra horizontalmente */
 }
 
 /* Estilos de las entradas */
@@ -42,21 +50,23 @@ h3{
 /* Input y botón con estilos */
 .entrada input, .entrada button {
     padding: 10px;
-    font-size: 16px;
+    font-size: 15px;
     border: none;
     border-radius: 5px;
 }
 
 .entrada input {
-    border: 1px solid #ccc;
+    border: 1px solid #ccccccfa;
     outline: none;
 }
 
 .entrada button {
-    background-color: #005f4b;
+    background: radial-gradient(141.42% 141.42% at 100% 0%, #fff6, #fff0), radial-gradient(140.35% 140.35% at 100% 94.74%, #bd34fe, #bd34fe00), radial-gradient(89.94% 89.94% at 18.42% 15.79%, #41d1ff, #41d1ff00);
     color: white;
     cursor: pointer;
     transition: background 0.3s;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .entrada button:hover {

@@ -1,0 +1,70 @@
+
+
+
+.productosPage{
+    flex-grow: 1; /* Hace que el contenido principal ocupe todo el espacio restante */
+    padding: 20px;
+    background-color: #06141b;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    
+}
+.contenidoDinamico{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+
+.titulo{
+   
+    padding-left: 0px;
+    margin-top: 10px;
+    text-shadow: 5px 5px 5px rgba(190, 52, 254, 0.459);
+    color: #dfdfd6;
+}
+
+.titulo:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade una sombra de texto */
+    transform: translateY(-2px); /* Desplaza ligeramente el texto hacia arriba */
+color: rgba(190, 52, 254, 0.459);
+}
+
+
+.description {
+    color: #dfdfd6;
+    font-size: large;
+    margin-top: 5%;
+    font-family: 'Courier New', Courier, monospace;
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+    align-content: center;
+    align-items: center;
+}
+
+.description:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade una sombra de texto */
+    transform: translateY(-2px); /* Desplaza ligeramente el texto hacia arriba */
+}
+
+
+.logo {
+    margin-top: 35px;
+    height: 230px; /* Ajusta el tamaño según tu logo */
+    animation: rotacionCambioColor 5s infinite linear; /* Aplica la animación */
+  }
+  
+  @keyframes rotacionCambioColor {
+    0% {
+      transform: rotateY(0deg);
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+      filter: hue-rotate(180deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+      filter: hue-rotate(360deg);
+    }
+  }

@@ -44,7 +44,7 @@ import { faPersonRunning } from "@fortawesome/free-solid-svg-icons";
     };
     return (
       <button className="btn-logout" onClick={() => Salir()}>
-        <FontAwesomeIcon className="icono" icon={faPersonRunning} color="#135585" />
+        <FontAwesomeIcon className="icono" icon={faPersonRunning} color='#dfdfd6' />
         Cerrar Sesión
       </button>
     );

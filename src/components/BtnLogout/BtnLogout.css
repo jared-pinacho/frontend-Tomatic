@@ -1,10 +1,11 @@
 .btn-logout {
     width: 0;
     padding: 0;
-    margin-bottom: 8px;
+    margin-bottom: 30px;
     overflow: hidden;
-    background-color: #9dc5c2;
-    color: #135A7A;
+    border: 1px solid rgb(231, 17, 17);
+    background: radial-gradient(1686.42% 113.39% at 83.25% 2.56%, #e71414f1, #e6070752);
+    
     border-radius: 15px;
     width: 100%;
     font-size: 17px;
