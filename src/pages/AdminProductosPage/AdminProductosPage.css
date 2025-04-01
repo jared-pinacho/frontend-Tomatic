@@ -19,8 +19,8 @@
     margin-top: 10px;
 
 }
-.cucsPage .barraBusqueda{
-    align-items: center;
+.barraBusqueda{
+    align-items: start;
     padding-left: 0px;
     margin-top: 10px;
 }
@@ -31,13 +31,133 @@
     text-shadow: 1px 1px 3px #9dc5c2;
     color: #dfdfd6;
 }
-.tabla{
-    height: 50%;
-    overflow: auto;
-}
 
-.cargando{
+
+.tabla {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  .tablita {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tablita th {
+    background-color: #0f3348; /* Color de fondo fuerte para el encabezado */
+    color: white; /* Texto blanco para el encabezado */
+    padding: 12px 15px;
+    text-align: left;
     font-weight: bold;
-    color: red;
-    font-size: 20px;
-}
+  }
+  
+  .tablita td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #154762;
+    background-color: #092132; /* Color de fondo claro para los datos */
+    color: #dfdfd6;
+  }
+  
+  .pagination {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    padding: 10px 10px; /* Espaciado interno */
+    margin: 20px 9px 10px 1px; /* Margen externo */
+    border: none; /* Sin borde */
+    border-radius: 7px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  }
+  
+  .pagination:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+  }
+  
+  .pagination:disabled {
+    background-color: #ccc; /* Color de fondo gris para botones deshabilitados */
+    color: #666; /* Texto gris para botones deshabilitados */
+    cursor: not-allowed; /* Cambia el cursor a "no permitido" */
+  }
+
+
+  .btn-agregar {
+    background-color: #00d812a1; /* Color de fondo azul */
+    font-weight: bold;
+    color: white; /* Texto blanco */
+    padding: 7px 25px; /* Espaciado interno */
+    margin: 10px 9px 10px 1px; /* Margen externo */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  }
+  
+  .btn-agregar:hover {
+    background-color: #00d81293; /* Color de fondo más oscuro al pasar el mouse */
+  }
+
+
+
+  .btn-editar {
+    background-color: #eeba0ec7; /* Color de fondo azul */
+    font-weight: bold;
+    color: white; /* Texto blanco */
+    padding: 7px 10px; /* Espaciado interno */
+    margin: 0px 6px 1px 0px; /* Margen externo */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  }
+  
+  .btn-editar:hover {
+    background-color: #e6ad10ea; /* Color de fondo más oscuro al pasar el mouse */
+  }
+
+
+  .btn-eliminar {
+    background-color: #f10808c7; /* Color de fondo azul */
+    font-weight: bold;
+    color: white; /* Texto blanco */
+    padding: 7px 13px; /* Espaciado interno */
+    margin: 0px 0px 0px 8px; /* Margen externo */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  }
+  
+  .btn-eliminar:hover {
+    background-color: #e6ad10ea; /* Color de fondo más oscuro al pasar el mouse */
+  }
+
+
+  .busqueda {
+  margin-bottom: 20px;
+    width: 97%;
+    padding: 0.250rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #dfdfd6;
+    background-color: #06141b;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .busqueda:focus {
+    color: #dfdfd6;
+    background-color: rgba(255, 255, 255, 0.904)41b;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
